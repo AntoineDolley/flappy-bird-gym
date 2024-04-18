@@ -43,7 +43,7 @@ from gym.envs.registration import register
 
 register(
     id="FlappyBird-v0",
-    entry_point="flappy_bird_gym:FlappyBirdEnvSimple",
+    entry_point="FlappyBirdEnvSimple",
 )
 
 register(

@@ -12,7 +12,7 @@ clean:
 
 # build the deployment package
 deployment: clean
-	python3 setup.py sdist bdist_wheel
+	py -3.9 setup.py sdist bdist_wheel
 
 # ship the deployment package to PyPi
 ship: test deployment

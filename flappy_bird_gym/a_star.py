@@ -48,13 +48,15 @@ def simulate_action(env, action):
     upper_pipe_y = up_pipe["y"] + PIPE_HEIGHT
     lower_pipe_y = low_pipe["y"]
 
-
     v_dist = (upper_pipe_y + lower_pipe_y + 25) / 2 - (player_y
                                                     + PLAYER_HEIGHT/2)
+    
+    
 
     if env._normalize_obs:
         h_dist /= env._screen_size[0]
         v_dist /= env._screen_size[1]
+        kk /= env._screen_size[1]
 
     return np.array([
         h_dist,
